@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cookie Clicker Companion</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="/js/popup.js" defer></script>
+	<script src="/js/domBehavior.js" defer></script>
+</head>
+<body>
+	<img src="./assets/imgs/logo.png" id="CCCLogo" class="center" />
+	<div class="tab">
+		<button id="tab1Btn" class="tablinks">Stock Settings</button>
+		<button id="tab2Btn" class="tablinks">Other Settings</button>
+	</div>
+	<div id="tab1" class="tabcontent">
+		<h4>Send Notification:</h4>
+		<div class="options">
+			<label>
+				<input type="checkbox" id="checkStockAbove" />
+				When stocks you own are above $ 
+			</label>
+			<input type="text" id="stockAbovePrice" maxlength="6" size="2" disabled="True">
+		</div>
+		<div class="options">
+			<label>
+				<input type="checkbox" id="checkStockBelow" />
+				When stocks you don't own max of are below $ 
+			</label>
+			<input type="text" id="stockBelowPrice" maxlength="6" size="2" disabled="True">
+		</div>
+		<div class="options">
+			<label>
+				<input type="checkbox" id="checkStockDollar" />
+				When stocks are $1
+			</label>
+		</div>
+		<div class="stockBtns">
+			<button id="showAllStocks" class="btn" value="1">Show All Stocks</button>
+			<button id="hideAllStocks" class="btn" value="0">Hide All Stocks</button>
+		</div>
+	</div>
+	<div id="tab2" class="tabcontent">
+		<button id="unmuteAll" class="btn" value="1">Unmute All Buildings</button><br>
+		<button id="muteAll" class="btn" value="0">Mute All Buildings</button><br>
+		<button id="muteAllRegular" class="btn" value="-1">Mute All Non-Minigame Buildings</button>
+	</div>
+</body>
+</html>

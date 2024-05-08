@@ -1,0 +1,24 @@
+{
+  "name": "Cookie Clicker Companion",
+  "description": "Provides notifications and other useful information for the browser game Cookie Clicker",
+  "version": "1",
+  "manifest_version": 3,
+  "permissions": ["alarms", "notifications", "storage", "activeTab"],
+  "background": {
+    "service_worker": "/js/background.js"
+  },
+  "content_scripts": [{
+        "js": ["/js/content.js"],
+        "matches": ["https://orteil.dashnet.org/*"]
+    }],
+  "action": {
+    "default_title": "Cookie Clicker Companion",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "/assets/imgs/16.png",
+    "32": "/assets/imgs/32.png",
+    "48": "/assets/imgs/48.png",
+    "128": "/assets/imgs/128.png"
+  }
+}

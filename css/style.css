@@ -1,0 +1,93 @@
+/* global reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 450px;
+}
+
+
+/* logo */
+#CCCLogo {
+	display: block;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+
+/* tab content */
+#tab1Btn {
+	background-color: #ccc;
+}
+
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+.tablinks {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 20px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+.tablinks:hover {
+	background-color: #ddd;
+}
+
+
+/* tab contents */
+.tabcontent {
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-top: none;
+	animation: fadeEffect 500ms;
+}
+
+.options {
+	margin-bottom: 5px ;
+}
+
+.stockBtns {
+	margin-top: 20px;
+}
+
+#tab1 {
+	font-size: 1rem;
+}
+
+#tab1 h4 {
+	margin-bottom: 10px;
+	font-size: 1.05rem;
+}
+
+#tab2 {
+	display: none;
+}
+
+#showAllStocks {
+	margin-right: 15px;
+}
+
+
+/* all btns */
+.btn {
+	margin-bottom: 10px;
+	padding: 5px 10px;
+}
+
+
+/* keyframes */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
